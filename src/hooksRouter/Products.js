@@ -10,10 +10,13 @@ export default function Products() {
    <div>
    <div>
     Choose a particular Product to proceed checkout <br />
+    <Link to='/products/111' > <button>Product1</button><br /><br /></Link>&nbsp;&nbsp;&nbsp;
+    <Link to='/products/222' > <button>Product2</button><br /><br /></Link>&nbsp;&nbsp;&nbsp;
+    
    </div>
 
-    <button>Product1</button><br /><br />
-    <button>Product2</button>
+   
+    
    </div>
 
   )

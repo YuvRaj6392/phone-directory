@@ -13,7 +13,7 @@ export default function App() {
        <Link to='/'>Home</Link>&nbsp;&nbsp;&nbsp;
        <Link to='/about'>About</Link>&nbsp;&nbsp;&nbsp;
        <Link to='/products' >Products</Link>&nbsp;&nbsp;&nbsp;
-       <Link to='/products/111' >Product{id}</Link>&nbsp;&nbsp;&nbsp;
+      
 
        {/* <Link to='/products/123' >Product123</Link>&nbsp;&nbsp;&nbsp; */}
     </nav>
