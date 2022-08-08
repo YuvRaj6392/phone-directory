@@ -6,9 +6,11 @@ export default function Main() {
  const increment1=()=>{
     setCount1(count1+1)
   }
+
   const increment2=()=>{
     setCount2(count2+1);
   }
+
   const checkEven=useMemo(()=>{
     console.warn("....")
     let i=0;

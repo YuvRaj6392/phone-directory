@@ -1,11 +1,11 @@
 import { useState, createContext } from "react";
 import ReactDOM from "react-dom/client";
 import Component2 from "./Component2";
-const UserContext = createContext()
+export const UserContext = createContext()
 
 
 function Component1() {
-  const [user, setUser] = useState("Jesse Hall");
+  const [user, setUser] = useState("fijshfjashf");
 
   return (
     <UserContext.Provider value={user}>
@@ -14,3 +14,5 @@ function Component1() {
     </UserContext.Provider>
   );
 }
+export default Component1
+

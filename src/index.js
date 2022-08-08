@@ -11,6 +11,8 @@ import ReactDOM from "react-dom/client";
  //import Component1  from "./Context3/Component1";
  //import App from "./Timer2/App"
 // import Main from "./JoeDoe/Main";
-import Main from "./useMemo/Main";
+//import Parent from "./useCallback/Parent";
+//import App from "./useReducer/App"
+import App from "./CodingUseReducer/App";
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Main />);
+root.render(<App />);
