@@ -13,7 +13,7 @@ import ReactDOM from "react-dom/client";
 // import Main from "./JoeDoe/Main";
 //import Parent from "./useCallback/Parent";
 //import App from "./useReducer/App"
-import App from "./CodingUseReducer2/App";
+import App from "./Redux/App";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 

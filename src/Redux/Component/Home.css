@@ -1,0 +1,15 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+.item
+{
+    margin:10px
+}
+.addToCartImg
+{
+    width: 45px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
