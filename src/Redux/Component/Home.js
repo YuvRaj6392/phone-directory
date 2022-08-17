@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div style={{marginLeft:"50px",marginRight:"50px"}}>
     <div className='addToCart'>
-        <img src="https://cdn-icons.flaticon.com/png/512/3757/premium/3757835.png?token=exp=1660681735~hmac=929d5eddb97e1dfca80a5078842e1824" alt="" className='addToCartImg' />
+        <img src="https://imgs.search.brave.com/AVWZr_3fyoEr7Xgx80DBTJMsWEyVf48rvj2tndzwnas/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5N/NXpUb2QyakhqdnNV/aDJPZTVLNWNRSGFI/YSZwaWQ9QXBp" alt="" className='addToCartImg' />
     </div>
         <h1 style={{textAlign:"center"}}>Home Component</h1>
         <div className='cart-wrapper' style={{display:"flex",alignItems:"center",border:"1px solid black",maxWidth:"420px"}}>
