@@ -1,25 +1,19 @@
 import React from "react";
+import { useState } from "react";
 import Header from "./Header";
-export default function App() {
-  let subscribers = [
-    {
-      id: 1,
-      name: "Shilpa Bhat",
-      phone: "8888888888",
-    },
-    {
-      id: 2,
-      name: "Srishti Gupta",
-      phone: "9999999999",
-    },
-  ];
-  const delteHandler=()=>{
+
+import  {Link} from "react-router-dom";
+
+export default function ShowSubscribers(props) {
+  
+  const deleteHandler=()=>{
     alert("Delete button has been clicked!");
   }
   return (
     <>
       <Header title={"Phone Directory"} />
-      <button>Add</button>
+
+      <Link to="/add"><button>Add</button></Link>
       <div>
         <table>
           <tr>
@@ -27,11 +21,11 @@ export default function App() {
             <th>Phone</th>
           </tr>
           {
-            subscribers.map(ele=>{
+            props.subscriberList.map(ele=>{
               return <tr key={ele.id}>
                 <td>{ele.name}</td>
                 <td>{ele.phone}</td>
-                <td><button onClick={delteHandler}>Delete</button></td>
+                <td><button onClick={deleteHandler}>Delete</button></td>
               </tr>
             })
           }

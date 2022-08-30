@@ -1,11 +1,11 @@
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-
-import App from "./RevisionPhoneDirectory/App";
+import PhoneDirectory from "./RevisionPhoneDirectory/PhoneDirectory";
+import ShowSubscribers from "./RevisionPhoneDirectory/ShowSubscribers";
 import AddSubscriber from "./RevisionPhoneDirectory/AddSubscriber";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<AddSubscriber />
+<PhoneDirectory />
 );
 // import { StrictMode } from "react";
 // import ReactDOM from "react-dom";

@@ -1,18 +1,26 @@
 import React, { useState } from 'react'
+import {Link} from "react-router-dom";
 
-export default function AddSubscriber() {
+export default function AddSubscriber(props) {
     const [name,setName]=useState("");
     const [phone,setPhone]=useState("");
+
+const onFormSubmit=(e)=>{
+e.preventDefault();
+props.addHandler({name:name,phone:phone})
+document.getElementById("name").value="";
+document.getElementById("phone").value="";
+}
   return (
     <div>
-        <button>Back</button>
+     <Link to="/"><button>Back</button></Link> 
         <br />
         <br />
-        <form action="">
-        <input type="text" placeholder='Name' onInput={e=>setName(e.target.value)}/>
+        <form  onSubmit={onFormSubmit}>
+        <input type="text" placeholder='Name' id='name' onInput={e=>setName(e.target.value)}/>
         <br />
         <br />
-        <input type="text" placeholder='phone' onInput={e=>setPhone(e.target.value)} />
+        <input type="text" placeholder='phone' id='phone' onInput={e=>setPhone(e.target.value)} />
         <br /><br />
         <button type='submit'>Add</button>
         </form>
