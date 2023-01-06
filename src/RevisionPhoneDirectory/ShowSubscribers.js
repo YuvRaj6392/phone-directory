@@ -5,10 +5,7 @@ import Header from "./Header";
 import  {Link} from "react-router-dom";
 
 export default function ShowSubscribers(props) {
-  
-  const deleteHandler=()=>{
-    alert("Delete button has been clicked!");
-  }
+console.log(props.subscriberList)
   return (
     <>
       <Header title={"Phone Directory"} />
@@ -25,7 +22,7 @@ export default function ShowSubscribers(props) {
               return <tr key={ele.id}>
                 <td>{ele.name}</td>
                 <td>{ele.phone}</td>
-                <td><button onClick={deleteHandler}>Delete</button></td>
+                <td><button onClick={props.deleteHandler(ele.id)}>Delete</button></td>
               </tr>
             })
           }
